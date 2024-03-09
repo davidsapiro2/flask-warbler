@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-
+#working now
 from flask import Flask, render_template, request, flash, redirect, session, g
 from flask_debugtoolbar import DebugToolbarExtension
 from sqlalchemy.exc import IntegrityError
@@ -47,6 +47,7 @@ def form_protection():
 
 def do_login(user):
     """Log in user."""
+
 
     session[CURR_USER_KEY] = user.id
 
